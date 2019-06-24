@@ -133,9 +133,3 @@ def close_window():
 	win.destroy()
 
 
-if __name__ == '__main__':
-	win = tk.Tk()
-
-	surface = Surface(win)
-	win.protocol('WM_DELETE_WINDOW', close_window)
-	win.mainloop()
