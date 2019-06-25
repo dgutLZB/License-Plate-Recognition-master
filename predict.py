@@ -430,7 +430,7 @@ class CardPredictor:
 					xr = col_num
 			card_imgs[card_index] = card_img[yl:yh, xl:xr] if color != "green" or yl < (yh-yl)//4 else card_img[yl-(yh-yl)//4:yh, xl:xr]
 		#以上为车牌定位
-		#以下为识别车牌中的字符
+		#以下为识别车牌中字符
 		predict_result = []
 		roi = None
 		card_color = None
